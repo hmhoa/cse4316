@@ -1,7 +1,10 @@
-import requests
+# sending http requests with python
+
+import requests # pip install requests
 
 # test HTTP GET method
-response = requests.get('http://localhost:3000/')
+# basically a unit test for our api - each test block here is a unit test
+response = requests.get('http://localhost:3000/') # before it puts ur request in ur network card, os intercepts it since it knows the 127.0.0.1 is a special ip
 print("response status code: " + str(response.status_code))
 print("response body: " + response.text)
 
